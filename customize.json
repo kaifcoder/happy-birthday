@@ -1,0 +1,23 @@
+{
+  "greeting": "Hey!",
+  "name": "Nausheen",
+  "greetingText": "I really like your name btw!",
+  "wishText": "I hope you have a great day! and an even better year ahead! \uD83D\uDE0A",
+  "imagePath": "img/nausheen.jpg",
+  "text1": "It's your birthday!!! \uD83D\uDE00",
+  "textInChatBox": "  Happy Birthday! \uD83C\uDF89 \uD83C\uDF89 \uD83C\uDF89",
+  "sendButtonLabel": "Send",
+  "text2": "That's what I was going to do.",
+  "text3": "But then I stopped.",
+  "text4": "I realised, I wanted to do something",
+  "text4Adjective": "special",
+  "text5Entry": "Because,",
+  "text5Content": "You are Special",
+  "smiley": "\uD83D\uDE01",
+  "bigTextPart1": "S",
+  "bigTextPart2": "O",
+  "wishHeading": "Happy Birthday!",
+  "outroText": "Okay, now come back and tell me if you liked it.",
+  "replayText": "Or click, if you want to watch it again.",
+  "outroSmiley": "\uD83D\uDE0A"
+}
