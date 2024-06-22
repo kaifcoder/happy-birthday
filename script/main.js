@@ -18,6 +18,10 @@ const fetchData = () => {
                 // Check if the iteration is over
                 // Run amimation if so
                 if (dataArr.length === dataArr.indexOf(customData) + 1) {
+                    // Select the audio element
+
+
+
                     animationTimeline();
                 }
             });
@@ -29,14 +33,15 @@ const animationTimeline = () => {
     // Spit chars that needs to be animated individually
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
-
+    // Select the audio element
+    const audio = document.getElementById('birthdayTune'); // Replace 'yourAudioElementId' with the actual ID
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
         .split("")
-        .join("</span><span>")}</span`;
+        .join("</span><span>")}</span>`;
 
     hbd.innerHTML = `<span>${hbd.innerHTML
         .split("")
-        .join("</span><span>")}</span`;
+        .join("</span><span>")}</span>`;
 
     const ideaTextTrans = {
         opacity: 0,
@@ -199,6 +204,7 @@ const animationTimeline = () => {
             ".baloons img",
             2.5,
             {
+
                 opacity: 0.9,
                 y: 1400
             },
@@ -212,10 +218,19 @@ const animationTimeline = () => {
             ".personImage",
             0.5,
             {
-                scale: 2.5,
+                onStart: () => {
+                    // Check if audio is ready and play it
+                    if (audio.readyState >= 3) {
+                        audio.play();
+                    } else {
+                        // If audio is not ready, add an event listener to play when it is ready
+                        audio.addEventListener('canplaythrough', () => audio.play(), { once: true });
+                    }
+                },
+                scale: 2.0,
                 opacity: 0,
                 x: 25,
-                y: -25,
+                y: 25,
                 rotationZ: -45
             },
             "-=2"

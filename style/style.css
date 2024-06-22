@@ -108,6 +108,7 @@ body {
 .idea-6 span,
 .wish-hbd span {
   display: inline-block;
+  
 }
 
 .idea-6 span {
@@ -120,8 +121,9 @@ body {
 
 .six img {
   display: inline-block;
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
+  
 }
 
 .six .hat {
